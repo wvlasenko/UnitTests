@@ -24,7 +24,7 @@ class MatchTest {
     @Test
     void multiply() {
         int expected = 16;
-        int actual = match.subtract(2, 8);
+        int actual = match.multiply(2, 8);
         assertEquals(expected, actual);
     }
 }
