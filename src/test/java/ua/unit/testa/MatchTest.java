@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MatchTest {
     private Match match = new Match();
 
-    //todo
     @Test
     void add() {
         int expected = 3;
@@ -19,6 +18,13 @@ class MatchTest {
     void subtract() {
         int expected = 8;
         int actual = match.subtract(20, 12);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void multiply() {
+        int expected = 16;
+        int actual = match.subtract(2, 8);
         assertEquals(expected, actual);
     }
 }
